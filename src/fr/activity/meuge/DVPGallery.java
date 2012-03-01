@@ -48,7 +48,7 @@ public class DVPGallery extends Activity {
 		//Construction des URL pour les images
 		mListImages = buildListImages();
 
-		//Récupération du composant affichant l'image en grand
+		//Récupération du composant affichant l'image en grand de michel
 		imgView = (ImageView)findViewById(R.id.imageview);
 		
 		//On lui met une image par défaut (la premiere de la liste ou à défaut l'image d'erreur)
@@ -139,6 +139,7 @@ public class DVPGallery extends Activity {
 			imgView.setLayoutParams(new Gallery.LayoutParams(150, 150));
 			imgView.setScaleType(ImageView.ScaleType.FIT_XY);
 			//On fixe un arrière plan plus sympa
+			imgView.setBackgroundResource(GalItemBg);
 			imgView.setBackgroundResource(GalItemBg);
 
 			return imgView;

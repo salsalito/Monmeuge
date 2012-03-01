@@ -1,5 +1,7 @@
 package fr.activity.meuge;
 
+import org.restlet.engine.Helper;
+
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -12,6 +14,7 @@ public class ImageFull extends Activity  implements OnClickListener {
 	@Override
 	 protected void onCreate(Bundle savedInstanceState) {
 	        super.onCreate(savedInstanceState);
+	        overridePendingTransition(R.anim.zoom_enter, R.anim.zoom_enter);
 	        setContentView(R.layout.image);
 	        Bundle extras = getIntent().getExtras();
 	        String []tt = new String[1];
@@ -25,6 +28,7 @@ public class ImageFull extends Activity  implements OnClickListener {
 		switch (view.getId())
        {
 			case R.id.buttonBack: setResult(100,new Intent());
+
 								  finish();  break;
        }
 	}

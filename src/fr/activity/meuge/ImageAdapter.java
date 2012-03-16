@@ -24,7 +24,7 @@ public class ImageAdapter extends BaseAdapter  {
 	 private static Context mContext;
 	 private boolean tableau;
 	 int mGalleryItemBackground;
-	    // references to our images
+	    // referencesa nos  images
 	    private Integer[] mThumbIds = {
 	            R.drawable.ic_launcher, R.drawable.ic_launcher,
 	            R.drawable.ic_launcher, R.drawable.ic_launcher,
